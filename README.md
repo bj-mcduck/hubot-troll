@@ -1,35 +1,31 @@
-# Hubot Example
+# hubot-troll
 
-An example script package for Hubot
+A hubot script to say whatever you want in the specified channel as your hubot.
 
-[![Build Status](https://travis-ci.org/hubot-scripts/hubot-example.png)](https://travis-ci.org/hubot-scripts/hubot-example)
+See [src/troll.coffee](src/troll.coffee) for full documentation.
 
-## Directory Structure
+## Installation
 
-Using the common directory structure for hubot script packages it will be easy
-to manage and allow others to easily contribute to your package.
+In your hubot project repo run:
 
-### script
+```
+npm install hubot-troll --save
+```
 
-This directory is home to a couple of development scripts; `bootstrap` and `test`
-they're used to bootstrap the development environment and run tests
-respectively.
+Then add `hubot-troll` to your `external-scripts.json` file:
 
-### src
+```
+[
+  "hubot-troll"
+]
+```
 
-This directory is home to the actual hubot scripts in the package. Your
-`index.coffee` entry point will load the scripts from this directory.
+## Sample Interaction
 
-### test
+```
+#user1 types in a secret room:
+user1> hubot troll general with I objectively feel that user1 makes a better point than user2.
 
-This directory is home to any tests you write for your scripts. This example
-package uses Mocha, Chai and Sinon to manage writing tests.
-
-## Advantages of Building a Package
-
-Some of the advantages of building an npm package for your hubot script(s) are:
-
-* You don't need to rely on when hubot-scripts package is released.
-* You can specify dependencies in the `package.json` rather than have users
-  manually specify them
-* You can easily add tests using your favourite frameworks and libraries
+#in the general channel, user2 receives:
+hubot> I objectively feel that user1 makes a better point than user2.
+```
