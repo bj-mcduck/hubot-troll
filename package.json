@@ -1,8 +1,8 @@
 {
-  "name": "hubot-example",
-  "description": "An example script package for Hubot",
-  "version": "1.0.0",
-  "author": "Tom Bell <tomb@tomb.io>",
+  "name": "hubot-troll",
+  "description": "A simple way to troll your friends with hubot",
+  "version": "0.0.1",
+  "author": "Brandon J McKay <admin@brandonjmckay.com>",
   "license": "MIT",
 
   "keywords": [
@@ -12,11 +12,11 @@
 
   "repository": {
     "type": "git",
-    "url": "git://github.com/hubot-scripts/hubot-example.git"
+    "url": "git://github.com/brandonjmckay/hubot-troll.git"
   },
 
   "bugs": {
-    "url": "https://github.com/hubot-scripts/hubot-example/issues"
+    "url": "https://github.com/brandonjmckay/hubot-troll/issues"
   },
 
   "dependencies": {
